@@ -1,6 +1,6 @@
 <h2>Software security</h2>
 <h2>Web Application</h2>
-<h1></h1>
+
 
 <br>
 <h3>Hosted Version</h3>
