@@ -13,6 +13,6 @@ trait PasswordValidationRules
      */
     protected function passwordRules()
     {
-        return ['required', 'string', (new Password)->length(7),new \Valorin\Pwned\Pwned(300) ,'confirmed'];
+        return ['required', 'string', new Password, 'confirmed'];
     }
 }
