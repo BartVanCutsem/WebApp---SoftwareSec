@@ -1,7 +1,8 @@
 <?php
+use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MakingContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Content.home');
+})->name("home");
+Route::get('/contact', function () {
+    return view('Content.contact');
 });
+
+Route::post('/MailService/Contact', [MakingContactController::class, "MakeContact"]);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+

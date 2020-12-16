@@ -104,6 +104,7 @@ return [
 
     'limiters' => [
         'login' => null,
+        'login' => "Login",
     ],
 
     /*
