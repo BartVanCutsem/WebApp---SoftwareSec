@@ -17,3 +17,14 @@
     main {
         background-color: white;
     }
+    
+    footer {
+        padding: 1%;
+        text-align: center;
+        background-color: gray;
+    }
+    
+    footer>a {
+        text-decoration: none;
+        color: black;
+    }

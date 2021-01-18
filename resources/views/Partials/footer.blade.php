@@ -1,3 +1,3 @@
-<div class="cookiebanner">
-    @include('cookieConsent::index')
-</div>
+<footer>
+    <a href="{{ asset('files/Privacy.pdf') }}">De privacy vind je hier !</a>
+</footer>

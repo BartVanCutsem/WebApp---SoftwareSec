@@ -39,4 +39,5 @@
 
         @livewireScripts
     </body>
+    @include('Partials.footer')
 </html>
