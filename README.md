@@ -205,7 +205,7 @@
 <br>
 
 <h1></h1>
-<h1>Verwerkingsregister</h1>
+<h1>Privacy</h1>
 
 <p>Bart Van Cutsem, gevestigd aan Luitenant Jacopsstraat, 1755 Lennik, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring. Contactgegevens:
     <ul>
