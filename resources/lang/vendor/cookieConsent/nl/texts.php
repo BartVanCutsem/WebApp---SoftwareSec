@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'message' => 'Uw ervaring op deze site wordt verbeterd door het gebruik van cookies.',
-    'agree' => 'Sta cookies toe',
+    'message' => 'Wij gebruiken enkel functionele cookies. ',
+    'agree' => 'Ik heb dit gelezen!',
 ];
