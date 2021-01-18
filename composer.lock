@@ -4,8 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8019ebe39a3cf669cdfe98806519b21f",
+    "content-hash": "72d794f53d3cfd08852a04fb519d4406",
     "packages": [
+        {
+            "name": "aidantwoods/secureheaders",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aidantwoods/SecureHeaders.git",
+                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aidantwoods/SecureHeaders/zipball/f60c3b752114036fbf621a813ead3c3dc7b4c34a",
+                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "dev-feature/braces/position_after_return_type_hint",
+                "phpunit/phpunit": "^4.0",
+                "psr/http-message": "^1.0",
+                "zendframework/zend-diactoros": "^1.0"
+            },
+            "suggest": {
+                "aidantwoods/markdownphpdocs": "Install this on its own and add it to your path, to auto-generate documentation if contributing to this repo.",
+                "psr/http-message": "In case you want to use the PSR-7 adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aidantwoods\\SecureHeaders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aidan Woods",
+                    "email": "aidantwoods@gmail.com",
+                    "homepage": "https://aidanwoods.com"
+                }
+            ],
+            "description": "A PHP class aiming to make the use of browser security features more accessible.",
+            "homepage": "https://github.com/aidantwoods/SecureHeaders/wiki",
+            "keywords": [
+                "content-security-policy",
+                "cookie",
+                "csp",
+                "headers",
+                "hsts",
+                "secure",
+                "secureheaders"
+            ],
+            "support": {
+                "issues": "https://github.com/aidantwoods/secureheaders/issues",
+                "source": "https://github.com/aidantwoods/secureheaders"
+            },
+            "time": "2017-08-28T15:41:23+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
@@ -2201,6 +2262,61 @@
             "time": "2020-08-28T17:11:00+00:00"
         },
         {
+            "name": "mikefrancis/laravel-secureheaders",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikefrancis/laravel-secureheaders.git",
+                "reference": "e1300becaad4ff974a5e112a89947a20ddc89fee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikefrancis/laravel-secureheaders/zipball/e1300becaad4ff974a5e112a89947a20ddc89fee",
+                "reference": "e1300becaad4ff974a5e112a89947a20ddc89fee",
+                "shasum": ""
+            },
+            "require": {
+                "aidantwoods/secureheaders": "^2.0",
+                "illuminate/contracts": ">=5.4",
+                "illuminate/http": ">=5.4",
+                "illuminate/support": ">=5.4",
+                "php": "7.x"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MikeFrancis\\LaravelSecureHeaders\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MikeFrancis\\LaravelSecureHeaders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Francis",
+                    "email": "mikeffrancis@gmail.com"
+                }
+            ],
+            "description": "SecureHeaders wrapper for Laravel.",
+            "support": {
+                "issues": "https://github.com/mikefrancis/laravel-secureheaders/issues",
+                "source": "https://github.com/mikefrancis/laravel-secureheaders/tree/v1.4.1"
+            },
+            "time": "2020-03-04T13:52:49+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.34",
             "source": {
@@ -3638,6 +3754,88 @@
                 }
             ],
             "time": "2020-11-28T23:12:36+00:00"
+        },
+        {
+            "name": "spatie/laravel-csp",
+            "version": "2.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-csp.git",
+                "reference": "a9c15ea6dc5266083132999f104fa8a363ab07e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-csp/zipball/a9c15ea6dc5266083132999f104fa8a363ab07e3",
+                "reference": "a9c15ea6dc5266083132999f104fa8a363ab07e3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.8.0|^6.0|^7.0|^8.0",
+                "illuminate/support": "~5.8.0|^6.0|^7.0|^8.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0|^1.3.1",
+                "orchestra/testbench": "~3.8.0|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.3",
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Csp\\CspServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Csp\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Verhelst",
+                    "email": "tvke91@gmail.com",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add CSP headers to the responses of a Laravel app",
+            "homepage": "https://github.com/spatie/laravel-csp",
+            "keywords": [
+                "content-security-policy",
+                "csp",
+                "headers",
+                "laravel",
+                "laravel-csp",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-csp/issues",
+                "source": "https://github.com/spatie/laravel-csp/tree/2.6.4"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-12-01T20:35:30+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5912,6 +6110,55 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "time": "2020-07-13T06:12:54+00:00"
+        },
+        {
+            "name": "valorin/pwned-validator",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/valorin/pwned-validator.git",
+                "reference": "d01a206f853b662e18d3b509360d27f1a3b4e7b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/valorin/pwned-validator/zipball/d01a206f853b662e18d3b509360d27f1a3b4e7b2",
+                "reference": "d01a206f853b662e18d3b509360d27f1a3b4e7b2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "illuminate/support": "^5.5||^6.0||^7.0||^8.0",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Valorin\\Pwned\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Valorin\\Pwned\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Rees-Carter",
+                    "email": "stephen@rees-carter.net"
+                }
+            ],
+            "description": "Super simple Laravel Validator for checking password via the Pwned Passwords service of Have I Been Pwned",
+            "support": {
+                "issues": "https://github.com/valorin/pwned-validator/issues",
+                "source": "https://github.com/valorin/pwned-validator/tree/1.3.4"
+            },
+            "time": "2020-09-10T01:56:23+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

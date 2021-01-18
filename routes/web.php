@@ -17,9 +17,9 @@ use App\Http\Controllers\MakingContactController;
 Route::get('/', function () {
     return view('Content.home');
 })->name("home");
-Route::get('/contact', function () {
-    return view('Content.contact');
-});
+// Route::get('/contact', function () {
+//     return view('Content.contact');
+// });
 
 Route::post('/MailService/Contact', [MakingContactController::class, "MakeContact"]);
 
